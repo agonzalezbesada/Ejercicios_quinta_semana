@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Ejercicios_quinta_semana:jar3">
+    <output-path>$PROJECT_DIR$/out/artifacts/Ejercicios_quinta_semana_jar3</output-path>
+    <root id="archive" name="Ejercicios_quinta_semana.jar">
+      <element id="module-output" name="Ejercicios_quinta_semana" />
+    </root>
+  </artifact>
+</component>
