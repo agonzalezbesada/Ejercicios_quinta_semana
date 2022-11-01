@@ -1,62 +1,66 @@
 ```mermaid
 graph TD
-  froml1c1tol43c2{"switch eleccion "}
-  froml4c16tol4c59("System.out.println('Introduzca un número');")
-  froml5c16tol5c45("n1 = calculador.nextDouble();")
-  froml6c16tol6c61("System.out.println('Introduzca otro número');")
-  froml7c16tol7c45("n2 = calculador.nextDouble();")
-  froml8c16tol8c41("resultado_suma = n1 + n2;")
-  froml9c16tol9c73("System.out.println('Resultado:' + '\n' + resultado_suma);")
-  froml10c16tol10c22["break;"]
-  froml13c16tol13c59("System.out.println('Introduzca un número');")
-  froml14c16tol14c45("n1 = calculador.nextDouble();")
-  froml15c16tol15c61("System.out.println('Introduzca otro número');")
-  froml16c16tol16c45("n2 = calculador.nextDouble();")
-  froml17c16tol17c42("resultado_resta = n1 - n2;")
-  froml18c16tol18c74("System.out.println('Resultado:' + '\n' + resultado_resta);")
-  froml19c16tol19c22["break;"]
-  froml22c16tol22c59("System.out.println('Introduzca un número');")
-  froml23c16tol23c45("n1 = calculador.nextDouble();")
-  froml24c16tol24c61("System.out.println('Introduzca otro número');")
-  froml25c16tol25c45("n2 = calculador.nextDouble();")
-  froml26c16tol26c51("resultado_multiplicacion = n1 * n2;")
-  froml27c16tol27c83("System.out.println('Resultado:' + '\n' + resultado_multiplicacion);")
-  froml28c16tol28c22["break;"]
-  froml31c16tol31c59("System.out.println('Introduzca un número');")
-  froml32c16tol32c45("n1 = calculador.nextDouble();")
-  froml33c16tol33c61("System.out.println('Introduzca otro número');")
-  froml34c16tol34c45("n2 = calculador.nextDouble();")
-  froml35c16tol35c45("resultado_division = n1 / n2;")
-  froml36c16tol36c77("System.out.println('Resultado:' + '\n' + resultado_division);")
-  froml37c16tol37c22["break;"]
-  froml40c16tol40c77("System.out.println('Elección erronea, revise la ortografía');")
-  froml4c16tol4c59 --> froml5c16tol5c45
-  froml5c16tol5c45 --> froml6c16tol6c61
-  froml6c16tol6c61 --> froml7c16tol7c45
-  froml7c16tol7c45 --> froml8c16tol8c41
-  froml8c16tol8c41 --> froml9c16tol9c73
-  froml9c16tol9c73 --> froml10c16tol10c22
-  froml1c1tol43c2 -- "Suma" --> froml4c16tol4c59
-  froml13c16tol13c59 --> froml14c16tol14c45
-  froml14c16tol14c45 --> froml15c16tol15c61
-  froml15c16tol15c61 --> froml16c16tol16c45
-  froml16c16tol16c45 --> froml17c16tol17c42
-  froml17c16tol17c42 --> froml18c16tol18c74
-  froml18c16tol18c74 --> froml19c16tol19c22
-  froml1c1tol43c2 -- "Resta" --> froml13c16tol13c59
-  froml22c16tol22c59 --> froml23c16tol23c45
-  froml23c16tol23c45 --> froml24c16tol24c61
-  froml24c16tol24c61 --> froml25c16tol25c45
-  froml25c16tol25c45 --> froml26c16tol26c51
-  froml26c16tol26c51 --> froml27c16tol27c83
-  froml27c16tol27c83 --> froml28c16tol28c22
-  froml1c1tol43c2 -- "Multiplicación" --> froml22c16tol22c59
-  froml31c16tol31c59 --> froml32c16tol32c45
-  froml32c16tol32c45 --> froml33c16tol33c61
-  froml33c16tol33c61 --> froml34c16tol34c45
-  froml34c16tol34c45 --> froml35c16tol35c45
-  froml35c16tol35c45 --> froml36c16tol36c77
-  froml36c16tol36c77 --> froml37c16tol37c22
-  froml1c1tol43c2 -- "División" --> froml31c16tol31c59
-  froml1c1tol43c2 -- default --> froml40c16tol40c77
+  froml1c0tol1c132("System.out.println('Elija una opción' + '\n' + '\n Suma' + '\n Resta' + '\n Multiplicación' + '\n División' + '\n' + '\nElección:');")
+  froml2c8tol2c41("eleccion = calculador.nextLine();")
+  froml5c8tol45c9{"switch eleccion "}
+  froml8c16tol8c59("System.out.println('Introduzca un número');")
+  froml9c16tol9c45("n1 = calculador.nextDouble();")
+  froml10c16tol10c61("System.out.println('Introduzca otro número');")
+  froml11c16tol11c45("n2 = calculador.nextDouble();")
+  froml12c16tol12c41("resultado_suma = n1 + n2;")
+  froml13c16tol13c73("System.out.println('Resultado:' + '\n' + resultado_suma);")
+  froml14c16tol14c22["break;"]
+  froml17c16tol17c59("System.out.println('Introduzca un número');")
+  froml18c16tol18c45("n1 = calculador.nextDouble();")
+  froml19c16tol19c61("System.out.println('Introduzca otro número');")
+  froml20c16tol20c45("n2 = calculador.nextDouble();")
+  froml21c16tol21c42("resultado_resta = n1 - n2;")
+  froml22c16tol22c74("System.out.println('Resultado:' + '\n' + resultado_resta);")
+  froml23c16tol23c22["break;"]
+  froml26c16tol26c59("System.out.println('Introduzca un número');")
+  froml27c16tol27c45("n1 = calculador.nextDouble();")
+  froml28c16tol28c61("System.out.println('Introduzca otro número');")
+  froml29c16tol29c45("n2 = calculador.nextDouble();")
+  froml30c16tol30c51("resultado_multiplicacion = n1 * n2;")
+  froml31c16tol31c83("System.out.println('Resultado:' + '\n' + resultado_multiplicacion);")
+  froml32c16tol32c22["break;"]
+  froml35c16tol35c59("System.out.println('Introduzca un número');")
+  froml36c16tol36c45("n1 = calculador.nextDouble();")
+  froml37c16tol37c61("System.out.println('Introduzca otro número');")
+  froml38c16tol38c45("n2 = calculador.nextDouble();")
+  froml39c16tol39c45("resultado_division = n1 / n2;")
+  froml40c16tol40c77("System.out.println('Resultado:' + '\n' + resultado_division);")
+  froml41c16tol41c22["break;"]
+  froml44c16tol44c77("System.out.println('Elección erronea, revise la ortografía');")
+  froml1c0tol1c132 --> froml2c8tol2c41
+  froml8c16tol8c59 --> froml9c16tol9c45
+  froml9c16tol9c45 --> froml10c16tol10c61
+  froml10c16tol10c61 --> froml11c16tol11c45
+  froml11c16tol11c45 --> froml12c16tol12c41
+  froml12c16tol12c41 --> froml13c16tol13c73
+  froml13c16tol13c73 --> froml14c16tol14c22
+  froml5c8tol45c9 -- "Suma" --> froml8c16tol8c59
+  froml17c16tol17c59 --> froml18c16tol18c45
+  froml18c16tol18c45 --> froml19c16tol19c61
+  froml19c16tol19c61 --> froml20c16tol20c45
+  froml20c16tol20c45 --> froml21c16tol21c42
+  froml21c16tol21c42 --> froml22c16tol22c74
+  froml22c16tol22c74 --> froml23c16tol23c22
+  froml5c8tol45c9 -- "Resta" --> froml17c16tol17c59
+  froml26c16tol26c59 --> froml27c16tol27c45
+  froml27c16tol27c45 --> froml28c16tol28c61
+  froml28c16tol28c61 --> froml29c16tol29c45
+  froml29c16tol29c45 --> froml30c16tol30c51
+  froml30c16tol30c51 --> froml31c16tol31c83
+  froml31c16tol31c83 --> froml32c16tol32c22
+  froml5c8tol45c9 -- "Multiplicación" --> froml26c16tol26c59
+  froml35c16tol35c59 --> froml36c16tol36c45
+  froml36c16tol36c45 --> froml37c16tol37c61
+  froml37c16tol37c61 --> froml38c16tol38c45
+  froml38c16tol38c45 --> froml39c16tol39c45
+  froml39c16tol39c45 --> froml40c16tol40c77
+  froml40c16tol40c77 --> froml41c16tol41c22
+  froml5c8tol45c9 -- "División" --> froml35c16tol35c59
+  froml5c8tol45c9 -- default --> froml44c16tol44c77
+  froml2c8tol2c41 --> froml5c8tol45c9
 ```
